@@ -33,4 +33,24 @@ export interface User {
     updated_at: string;
 }
 
+export interface MeetingRoom {
+    id: number;
+    name: string;
+    capacity: number;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface Booking {
+    id: number;
+    start_time: string;
+    end_time: string;
+    meeting_room_id: number;
+    meeting_room: MeetingRoom;
+    user_id: number;
+    user: User;
+    created_at: string;
+    updated_at: string;
+}
+
 export type BreadcrumbItemType = BreadcrumbItem;
